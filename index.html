@@ -20,7 +20,7 @@
 		 
 		li a {
 		  font-family: "Times New Roman", Times, serif;
-		  font: 15px fantasy; 
+		  font: 20px fantasy; 
 		  color: black;   
 		  padding: 14px 16px; 
 		  text-decoration: none;
@@ -28,11 +28,15 @@
 		 
 		ul {
 		  list-style-type: none; 
-      margin: 0; 
+      margin: 1; 
       padding: 0;
       overflow: hidden;
       background-color: #fff;  
 		} 
+		
+		select {
+		  display: none;
+		}
 		
 		#aboutus {
 		  float: right;
@@ -58,6 +62,7 @@
 		}
 		
 		#ringbutton {
+
 		  margin-left: auto;
 		  margin-right: auto;
 		  display: block;
@@ -69,19 +74,19 @@
 		  margin-right: auto;
 		  display: block;
 		  width: 40%;
-		  border-radius: 30px;
+		  border-radius: 50px;
 		}
 		
 		@media only screen and (max-width: 600px) {
 		
-		  li a {
-		  font-family: "Times New Roman", Times, serif;
-		  font: 8px fantasy; 
-		  color: black;   
-		  padding: 10px 12px; 
-		  text-decoration: none;
+		  ul {
+		    display: none;
+		  }
 		  
-		}
+		  select {
+		    font-family: "Times New Roman", Times, serif;
+		  font: 15px fantasy;
+		  }
 		
       .button {
 		    margin-left: auto;
@@ -150,19 +155,41 @@
 
             <li><a href="https://www.google.com/?gws_rd=ssl">Boho Rings</a></li>
 
-            <li><a href="https://www.google.com/?gws_rd=ssl">Crowns and Accessories</a></li>
+            <li><a href="https://www.google.com/?gws_rd=ssl">Crowns</a></li>
 
             <li><a href="https://www.google.com/?gws_rd=ssl">Pareos</li>
 
             <li><a href="https://www.google.com/?gws_rd=ssl">Swings</li>      
 
+            <li><a href="https://www.google.com/?gws_rd=ssl">Accessories</a></li>
+            
             <li><a href="https://www.google.com/?gws_rd=ssl">Other Props</a></li>
 
             <li id="aboutus"><a href="https://www.google.com/?gws_rd=ssl">About Us</a></li>
 
-            </li>
-
           </ul>
+          
+          <select> 
+          
+            <option value="https://www.google.com/?gws_rd=ssl" selected="selected">Select</option> 
+    
+            <option value="https://www.google.com/?gws_rd=ssl">Home</option> 
+            
+            <option value="https://www.google.com/?gws_rd=ssl">Boho Rings</option> 
+            
+            <option value="https://www.google.com/?gws_rd=ssl">Crowns</option> 
+            
+            <option value="https://www.google.com/?gws_rd=ssl">Pareos</option> 
+            
+            <option value="https://www.google.com/?gws_rd=ssl">Swings</option> 
+            
+            <option value="https://www.google.com/?gws_rd=ssl">Accessories</option>
+            
+            <option value="https://www.google.com/?gws_rd=ssl">Other Props</option>
+            
+            <option value="https://www.google.com/?gws_rd=ssl">About Us</option>
+            
+          </select> 
 
       </td>
 
@@ -176,9 +203,7 @@
 
     
 
-    <table width="100%" cellspacing="3" cellpadding="3">
-
-      <tr>
+    <div>
 
         <a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/Boho%20Ring%201.jpg"/>
           
@@ -195,9 +220,7 @@
         <a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/Boho%20Ring%201.jpg"/>
           
         <a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Swing.jpg"/>
-        
-      </tr>
 
-    </table>
+    </div>
 	</body>
 </html>
