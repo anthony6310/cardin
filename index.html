@@ -9,8 +9,9 @@
    <style>
 		
 		.nav li {
-		  float: left;
+		  display: inline;
 		  padding: 5px;
+		  
 		}
 		 
 		.nav li a:hover {
@@ -30,7 +31,8 @@
       margin: 1; 
       padding: 0;
       overflow: hidden;
-      background-color: #fff;  
+      background-color: #fff; 
+      width: 100%; 
 		}
 		
 		#logo {
@@ -70,6 +72,18 @@
 
     #collapse {
       display: none;
+    }
+    
+    .float-center {
+      float: right;
+      position: relative;
+      left: -50%; /* or right 50% */
+      text-align: left;
+    }
+    
+    .float-center > .child {
+      position: relative;
+      left: 50%;
     }
 		
 		@media only screen and (max-width: 764px) {
@@ -213,15 +227,15 @@
 
 	  </table>
 
-<!-- Drop down menu -->
+<!-- Main Menu -->
 
 	  <table width="100%">
  
     <tr>
 
-      <td class="nav">
+      <td class="nav float-center">
 
-          <ul class="center semi-square">
+          <ul class="child">
 
             <li><a href="https://www.google.com/?gws_rd=ssl">Home</a></li>
 
@@ -246,6 +260,8 @@
     </tr>
 
   </table>
+  
+  <!-- Collapsible Menu -->
   
   <table id="collapse" width="100%">
   
@@ -326,8 +342,3 @@
     
 	</body>
 </html>
-
-
-
-
-
