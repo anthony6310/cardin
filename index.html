@@ -8,17 +8,16 @@
     
    <style>
 		
-		li {
+		.nav li {
 		  float: left;
 		  padding: 5px;
 		}
 		 
-		li a:hover {
+		.nav li a:hover {
       background: #edc8c3;
-      border-radius: 150px;
     } 
 		 
-		li a {
+		.nav li a {
 		  font-family: "Times New Roman", Times, serif;
 		  font: 20px fantasy; 
 		  color: black;   
@@ -26,17 +25,13 @@
 		  text-decoration: none;
 		}
 		 
-		ul {
+		.nav ul {
 		  list-style-type: none; 
       margin: 1; 
       padding: 0;
       overflow: hidden;
       background-color: #fff;  
 		}
-		
-		select{
-		  display: none;
-		} 
 		
 		#logo {
 		  width: 20%;
@@ -72,15 +67,22 @@
 		  width: 40%;
 		  border-radius: 50px;
 		}
+
+    #collapse {
+      display: none;
+    }
 		
 		@media only screen and (max-width: 764px) {
 		
-		  #nav {
+		  .nav {
 		    display: none;
 		  }
 		
+		  #collapse{
+		    display: inline-block;
+		  }
+		  
 		  select {
-		    display: block;
 		    margin-left: auto; 
 		    margin-right: auto;
 		    display: block;
@@ -107,7 +109,7 @@
         font-family: "Times New Roman", Times, serif;
 		    font: 10px fantasy; 
         height: 29px;
-        padding: 5px; /* If you add too much padding here, the options won't show in IE */
+        padding: 5px; 
         width: 268px;
       }
       
@@ -136,8 +138,49 @@
 		    display: block;
 		    width: 90%;
 		    border-radius: 30px;
-		
+		   }
+		    
+		  .menu-content {
+		    font-family: 'fantasy', sans-serif;
+		    padding: 0px 0px 0px 50px;
 		  }
+		  
+		  .collapsible-menu {
+		    background-color: #fff;
+		    padding: 0px 30px;
+		    border-bottom: 6px solid #edc8c3;
+		    box-shadow: 1px 2px 3px #edc8c3;
+		  }
+		  
+		  .collapsible-menu ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .collapsible-menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+      }
+      
+      .collapsible-menu label {
+        font-family: 'fantasy', cursive;
+        font-size: 40px;
+        display: block;
+        cursor: pointer;
+        background: url(https://anthony6310.github.io/cardin/Website/menu.png) no-repeat left center;
+        background-size: 40px;
+        padding: 10px 0 10px 50px;
+      }
+      
+      input#menu {
+        display: none;
+      }
+      
+      input:checked +label {
+        background-image: url(https://anthony6310.github.io/cardin/Website/close.png);
+      }
+		
     }
 	
 		
@@ -170,9 +213,9 @@
  
     <tr>
 
-      <td id="nav">
+      <td class="nav">
 
-          <ul class="center">
+          <ul class="center semi-square">
 
             <li><a href="https://www.google.com/?gws_rd=ssl">Home</a></li>
 
@@ -192,29 +235,41 @@
 
           </ul>
           
-      <td>
-      
-        <select class="styled-select semi-square">
-        
-          <option value="https://www.google.com/?gws_rd=ssl">Home</option>
-          
-          <option value="https://www.google.com/?gws_rd=ssl">Boho Rings</option>
-          
-          <option value="https://www.google.com/?gws_rd=ssl">Crowns</option>
-          
-          <option value="https://www.google.com/?gws_rd=ssl">Pareos</option>
-          
-          <option value="https://www.google.com/?gws_rd=ssl">Swings</option>
-          
-          <option value="https://www.google.com/?gws_rd=ssl">Accessories</option>
-          
-          <option value="https://www.google.com/?gws_rd=ssl">Other Props</option>
-          
-          <option value="https://www.google.com/?gws_rd=ssl">About us</option>
-          
-        </select>
-      
       </td>
+          
+      <td id="collapse">
+        
+        <div class="collapsible-menu">
+        
+          <input type="checkbox" id="menu">
+          
+          <label for="menu">Menu</label>
+        
+            <div class="menu-content">
+          
+              <ul>
+
+                <li><a href="https://www.google.com/?gws_rd=ssl">Home</a></li>
+
+                <li><a href="https://www.google.com/?gws_rd=ssl">Boho Rings</a></li>
+
+                <li><a href="https://www.google.com/?gws_rd=ssl">Crowns</a></li>
+
+                <li><a href="https://www.google.com/?gws_rd=ssl">Pareos</a></li>
+
+                <li><a href="https://www.google.com/?gws_rd=ssl">Swings</a></li>  
+            
+                <li><a href="https://www.google.com/?gws_rd=ssl">Accessories</a></li>     
+
+                <li><a href="https://www.google.com/?gws_rd=ssl">Other Props</a></li>
+
+                <li><a href="https://www.google.com/?gws_rd=ssl">About Us</a></li>
+
+              </ul>
+          
+            </div>
+          
+        </div>
 
       </td>
 
@@ -247,6 +302,10 @@
         <a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Swing.jpg"/>
 
     </div>
+    
+    <div>Icons made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    
+    <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    
 	</body>
 </html>
-
