@@ -7,11 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
    <style>
-   
-    #background{
-      background: url("https://anthony6310.github.io/cardin/Website/Left%20vine.jpg") repeat-y top left, url("https://anthony6310.github.io/cardin/Website/Right%20vine.jpg") repeat-y top right;
-    }
-   
+
     .button {
 		  margin-left: auto;
 		  margin-right: auto;
@@ -63,10 +59,6 @@
       text-decoration: none;
     }
     
-    .imglink{
-      width: 100%;
-    }
-    
     #logo {
 		  width: 35%;
 		  height: auto;
@@ -107,11 +99,7 @@
 		}
 		
 		@media only screen and (max-width: 764px) {
-		
-		  #background{
-		    background: white;
-		  }
-		
+
 		  .nav {
 		    display: none;
 		  }
@@ -119,38 +107,7 @@
 		  #collapse{
 		    display: inline-block;
 		  }
-		  
-		  select {
-		    margin-left: auto; 
-		    margin-right: auto;
-		    display: block;
-		    width: 80%;
-		  }
-		  
-			.styled-select {
-        height: 29px;
-        overflow: hidden;
-        width: 240px;
-        background-color: #edc8c3;
-      }
-		
-	    .semi-square {
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        width: 100%;
-      }
-      
-      .styled-select select {
-        background: transparent;
-        border: none;
-        font-family: "Times New Roman", Times, serif;
-		    font: 10px fantasy; 
-        height: 29px;
-        padding: 5px; 
-        width: 268px;
-      }
-      
+
       .button {
 		    margin-left: auto;
 		    margin-right: auto;
@@ -227,6 +184,30 @@
       }
 		
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	#content{
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-auro-rows: minmax(100px, auto);
+	  margin: 0 auto;
+	  grid-gap: 10px;
+	}
 	
 		
 		</style>
@@ -234,28 +215,14 @@
 	</head>
 	
 	<body>
-	  
-	  <div>
-	
-		<!-- Page Title -->
-
-    <table width="100%">
-
-      <tr>
-
-        <td>
-
-	        <img id="logo" class="center" src="https://anthony6310.github.io/cardin/Website/Title.jpg"/>
-
-        </td>
-
-      </tr>
-
-	  </table>
-
-<!-- Main Menu -->
-
-	  <table width="100%">
+  
+  <div id="content">
+  
+    <div class="title"><img id="logo" class="center" src="https://anthony6310.github.io/cardin/Website/Title.jpg"/></div>
+    
+    <div>
+    
+      <table width="100%">
  
     <tr>
 
@@ -286,10 +253,11 @@
     </tr>
 
   </table>
-  
-  <!-- Collapsible Menu -->
-  
-  <table id="collapse" width="100%">
+    
+    </div>
+    
+    <div class="mobilenav">
+      <table id="collapse" width="100%">
   
     <tr>
   
@@ -332,47 +300,33 @@
     </tr>
      
   </table>
-  
-
-
-
-<!-- Link Images -->
-
-    
-
-    <div id="background">
-     
-        <div class="imglink"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/Crownpic.jpg"/></div>
-          
-        <div class="imglink"><a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Crown.png"/></div>
-        
-        <div class="imglink"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/bohoringquince.jpg"/></div>
-          
-        <div class="imglink"><a href="https://www.google.com/?gws_rd=ssl"><img id="ringbutton" class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Ring.jpg"/></div>
-         
-        <div class="imglink"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/horseaccessorie.JPG"/></div>
-          
-        <div class="imglink"><a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Pareos.jpg"/></div>
-
-        <div class="imglink"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/swing pic.JPG"/></div>
-          
-        <div class="imglink"><a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Swing.jpg"/></div>
-
     </div>
     
-<!-- credits -->
-
-    <div id="footer"> 
+    <div class="i1"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/Crownpic.jpg"/></div>
     
-      <div>Icons made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <div class="t1"><a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Crown.png"/></div>
+    
+    <div class="i2"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/bohoringquince.jpg"/></div>
+    
+    <div class="t2"><a href="https://www.google.com/?gws_rd=ssl"><img id="ringbutton" class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Ring.jpg"/></div>
+    
+    <div class="i3"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/horseaccessorie.JPG"/></div>
+    
+    <div class="t3"><a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Pareos.jpg"/></div>
+    
+    <div class="i4"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/swing pic.JPG"/></div>
+    
+    <div class="t4"><a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Swing.jpg"/></div>
+    
+    <div id="footer"><div>Icons made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     
     <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href=   "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    
     </div>
-    
+  
   </div>
     
 	</body>
+	
 </html>
 		
 
