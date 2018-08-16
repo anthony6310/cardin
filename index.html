@@ -8,69 +8,69 @@
     
    <style>
 
-    .button {
+    .button{
 		  margin-left: auto;
 		  margin-right: auto;
 		  display: block;
 		  width: 8%;
 		}
 		
-		.center {
+		.center{
 		  margin-left: auto; 
 		  margin-right: auto;
 		  display: block;
 		  width: 50%;
 		}
 		
-		.centerimage {
+		.centerimage{
 		  margin: 0;
 		  margin-left: auto;
 		  margin-right: auto;
-		  display: inline-block;
+		  display: block;
 		  width: 40%;
 		  border-radius: 50px;
 		}
 		
-		#collapse {
+		#collapse{
       display: none;
     }
     
-    .float-center {
+    .float-center{
       float: right;
       position: relative;
       left: -50%; 
       text-align: left;
     }
     
-    .float-center > .child {
+    .float-center > .child{
       position: relative;
       left: 50%;
     }
     
-    #footer {
+    #footer{
       background-color: #edc8c3;
       width: 100%;
       height: 200px;
     }
     
-    #footer a {
+    #footer a{
       color: black;
       font-family: 'times new roman', times;
       text-decoration: none;
     }
     
-    #logo {
+    #logo{
 		  width: 35%;
 		  height: auto;
 		}
 		
-		.nav li {
+		.nav li{
 		  display: inline;
 		  padding: 5px;
 		  
 		}
 		
-		.nav li a {
+		.nav li a{
 		  font-family: "Times New Roman", Times, serif;
 		  font: 20px fantasy; 
 		  color: black;   
@@ -78,11 +78,11 @@
 		  text-decoration: none;
 		}
 		
-		.nav li a:hover {
+		.nav li a:hover{
       background: #edc8c3;
     } 
     
-    .nav ul {
+    .nav ul{
 		  list-style-type: none; 
       margin: 1; 
       padding: 0;
@@ -91,16 +91,83 @@
       width: 100%; 
 		}
 		
-		#ringbutton {
+		#ringbutton{
 		  margin-left: auto;
 		  margin-right: auto;
 		  display: block;
 		  width: 12%;
 		}
 		
-		@media only screen and (max-width: 764px) {
+		#content{
+	    display: grid;
+	    margin: 0 auto;
+	    grid-gap: 10px;
+	    grid-template-areas:
+	    "title"
+	    "navbar"
+	    "mobile"
+	    "i1"
+	    "t1"
+	    "i2"
+	    "t2"
+	    "i3"
+	    "t3"
+	    "i4"
+	    "t4"
+	    "footer";
+	  }
+		
+		.title{
+		  grid-area: title;
+		}
+		
+		.navbar{
+		  grid-area: navbar;
+		}
+		
+		.mobilenav{
+		  grid-area: mobile;
+		}
+		
+		.i1{
+		  grid-area: i1;
+		}
+		
+		.t1{
+		  grid-area: t1;
+		}
+		
+		.i2{
+		  grid-area: i2;
+		}
+		
+		.t2{
+		  grid-area: t2;
+		}
+		
+		.i3{
+		  grid-area: i3;
+		}
+		
+		.t3{
+		  grid-area: t3;
+		}
+		
+		.i4{
+		  grid-area: i4;
+		}
+		
+		.t4{
+		  grid-area: t4;
+		}
+		
+		#footer{
+		  grid-area: footer;
+		}
+		
+		@media only screen and (max-width: 764px){
 
-		  .nav {
+		  .nav{
 		    display: none;
 		  }
 		
@@ -108,26 +175,26 @@
 		    display: inline-block;
 		  }
 
-      .button {
+      .button{
 		    margin-left: auto;
 		    margin-right: auto;
 		    display: block;
 		    width: 25%;
 		  }
 		  
-		  #ringbutton {
+		  #ringbutton{
 		    margin-left: auto;
 		    margin-right: auto;
 		    display: block;
 		    width: 33%;
 		  }
 		  
-		  #logo {
+		  #logo{
 		    width: 70%;
 		    height: auto;
 		  }
 		  
-		  .centerimage {
+		  .centerimage{
 		    margin-left: auto;
 		    margin-right: auto;
 		    display: block;
@@ -135,25 +202,25 @@
 		    border-radius: 30px;
 		   }
 		    
-		  .menu-content {
+		  .menu-content{
 		    max-height: 0;
 		    overflow: hidden;
 		    padding: 0px 0px 0px 50px;
 		  }
 		  
-		  .collapsible-menu {
+		  .collapsible-menu{
 		    background-color: #fff;
 		    padding: 0px 30px;
 		    border-bottom: 6px solid #edc8c3;
 		    box-shadow: 1px 2px 3px #edc8c3;
 		  }
 		  
-		  .collapsible-menu ul {
+		  .collapsible-menu ul{
         list-style-type: none;
         padding: 0;
       }
       
-      .collapsible-menu a {
+      .collapsible-menu a{
         display: block;
         padding: 10px;
         text-decoration: none;
@@ -161,7 +228,7 @@
         font-family: 'times new roman', times;
       }
       
-      .collapsible-menu label {
+      .collapsible-menu label{
         font-family: 'fantasy', cursive;
         font-size: 40px;
         display: block;
@@ -171,44 +238,19 @@
         padding: 10px 0 10px 50px;
       }
       
-      input#menu {
+      input#menu{
         display: none;
       }
       
-      input:checked +label {
+      input:checked +label{
         background-image: url(https://anthony6310.github.io/cardin/Website/close.png);
       }
       
-      input:checked ~ .menu-content {
+      input:checked ~ .menu-content{
         max-height: 100%;
       }
 		
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-	#content{
-	  display: grid;
-	  grid-template-columns: 1fr;
-	  grid-auro-rows: minmax(100px, auto);
-	  margin: 0 auto;
-	  grid-gap: 10px;
-	}
-	
 		
 		</style>
 		
@@ -216,111 +258,150 @@
 	
 	<body>
   
+  <!-- Grid -->
+  
   <div id="content">
   
-    <div class="title"><img id="logo" class="center" src="https://anthony6310.github.io/cardin/Website/Title.jpg"/></div>
+  <!-- Title -->
+  
+    <div class="title">
+      <img id="logo" class="center" src="https://anthony6310.github.io/cardin/Website/Title.jpg"/>
+    </div>
     
-    <div>
+  <!-- Desktop Navbar -->
+    
+    <div class="navbar">
     
       <table width="100%">
  
-    <tr>
+        <tr>
 
-      <td class="nav float-center">
+          <td class="nav float-center">
 
-          <ul class="child">
+            <ul class="child">
 
-            <li><a href="https://www.google.com/?gws_rd=ssl">Home</a></li>
+              <li><a href="https://www.google.com/?gws_rd=ssl">Home</a></li>
 
-            <li><a href="https://www.google.com/?gws_rd=ssl">Crowns</a></li>
+              <li><a href="https://www.google.com/?gws_rd=ssl">Crowns</a></li>
 
-            <li><a href="https://www.google.com/?gws_rd=ssl">Boho Rings</a></li>
+              <li><a href="https://www.google.com/?gws_rd=ssl">Boho Rings</a></li>
 
-            <li><a href="https://www.google.com/?gws_rd=ssl">Pareos</a></li>
+              <li><a href="https://www.google.com/?gws_rd=ssl">Pareos</a></li>
 
-            <li><a href="https://www.google.com/?gws_rd=ssl">Swings</a></li>  
+              <li><a href="https://www.google.com/?gws_rd=ssl">Swings</a></li>  
             
-            <li><a href="https://www.google.com/?gws_rd=ssl">Accessories</a></li>  
+              <li><a href="https://www.google.com/?gws_rd=ssl">Accessories</a></li>  
                
-            <li><a href="https://www.google.com/?gws_rd=ssl">Other Props</a></li>
+              <li><a href="https://www.google.com/?gws_rd=ssl">Other Props</a></li>
 
-            <li><a href="https://www.google.com/?gws_rd=ssl">About Us</a></li>
+              <li><a href="https://www.google.com/?gws_rd=ssl">About Us</a></li>
 
-          </ul>
+            </ul>
           
-      </td>
+          </td>
 
-    </tr>
+        </tr>
 
-  </table>
+      </table>
     
     </div>
+    
+  <!-- Mobile Menu -->
     
     <div class="mobilenav">
+    
       <table id="collapse" width="100%">
   
-    <tr>
+        <tr>
   
-      <td>
+          <td>
         
-        <div class="collapsible-menu">
+            <div class="collapsible-menu">
         
-          <input type="checkbox" id="menu">
+              <input type="checkbox" id="menu">
           
-          <label for="menu">Menu</label>
+              <label for="menu">Menu</label>
         
-            <div class="menu-content">
+                <div class="menu-content">
           
-              <ul>
+                  <ul>
 
-                <li><a href="https://www.google.com/?gws_rd=ssl">Home</a></li>
+                    <li><a href="https://www.google.com/?gws_rd=ssl">Home</a></li>
 
-                <li><a href="https://www.google.com/?gws_rd=ssl">Crowns</a></li>
+                    <li><a href="https://www.google.com/?gws_rd=ssl">Crowns</a></li>
 
-                <li><a href="https://www.google.com/?gws_rd=ssl">Boho Rings</a></li>
+                    <li><a href="https://www.google.com/?gws_rd=ssl">Boho Rings</a></li>
 
-                <li><a href="https://www.google.com/?gws_rd=ssl">Pareos</a></li>
+                    <li><a href="https://www.google.com/?gws_rd=ssl">Pareos</a></li>
 
-                <li><a href="https://www.google.com/?gws_rd=ssl">Swings</a></li>  
+                    <li><a href="https://www.google.com/?gws_rd=ssl">Swings</a></li>  
             
-                <li><a href="https://www.google.com/?gws_rd=ssl">Accessories</a></li>     
+                    <li><a href="https://www.google.com/?gws_rd=ssl">Accessories</a></li>     
 
-                <li><a href="https://www.google.com/?gws_rd=ssl">Other Props</a></li>
+                    <li><a href="https://www.google.com/?gws_rd=ssl">Other Props</a></li>
 
-                <li><a href="https://www.google.com/?gws_rd=ssl">About Us</a></li>
+                    <li><a href="https://www.google.com/?gws_rd=ssl">About Us</a></li>
 
-              </ul>
+                  </ul>
+          
+                </div>
           
             </div>
-          
-        </div>
 
-      </td>
+          </td>
       
-    </tr>
+        </tr>
      
-  </table>
+      </table>
+      
     </div>
     
-    <div class="i1"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/Crownpic.jpg"/></div>
+  <!-- Image Links -->
     
-    <div class="t1"><a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Crown.png"/></div>
+    <!-- Crown Links -->
     
-    <div class="i2"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/bohoringquince.jpg"/></div>
+    <div class="i1"><a href="https://www.google.com/?gws_rd=ssl">
+      <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/Crownpic.jpg"/></div>
     
-    <div class="t2"><a href="https://www.google.com/?gws_rd=ssl"><img id="ringbutton" class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Ring.jpg"/></div>
+    <div class="t1"><a href="https://www.google.com/?gws_rd=ssl">
+      <img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Crown.png"/></div>
     
-    <div class="i3"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/horseaccessorie.JPG"/></div>
+    <!-- Ring Links -->
     
-    <div class="t3"><a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Pareos.jpg"/></div>
+    <div class="i2"><a href="https://www.google.com/?gws_rd=ssl">
+      <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/bohoringquince.jpg"/></div>
     
-    <div class="i4"><a href="https://www.google.com/?gws_rd=ssl"><img class="centerimage" src="https://anthony6310.github.io/cardin/Website/swing pic.JPG"/></div>
+    <div class="t2"><a href="https://www.google.com/?gws_rd=ssl">
+      <img id="ringbutton" class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Ring.jpg"/></div>
     
-    <div class="t4"><a href="https://www.google.com/?gws_rd=ssl"><img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Swing.jpg"/></div>
+    <!-- Pareo Links -->
     
-    <div id="footer"><div>Icons made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <div class="i3"><a href="https://www.google.com/?gws_rd=ssl">
+      <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/horseaccessorie.JPG"/></div>
     
-    <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href=   "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <div class="t3"><a href="https://www.google.com/?gws_rd=ssl">
+      <img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Pareos.jpg"/></div>
+    
+    <!-- Swing Links -->
+    
+    <div class="i4"><a href="https://www.google.com/?gws_rd=ssl">
+      <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/swing pic.JPG"/></div>
+    
+    <div class="t4"><a href="https://www.google.com/?gws_rd=ssl">
+      <img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Swing.jpg"/></div>
+    
+  <!-- Footer -->  
+    
+    <!-- Credits -->
+    
+    <div id="footer"><div>Icons made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from 
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
+        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    
+    <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from 
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
+        <a href=   "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        
     </div>
   
   </div>
