@@ -61,7 +61,6 @@
     #footer{
       background-color: #edc8c3;
       width: 100%;
-      height: 200px;
     }
     
     #footer a{
@@ -101,6 +100,13 @@
       width: 100%; 
 		}
 		
+		.igheading{
+		  font-family: cursive, "Times New Roman", Times, serif;
+		  font-size: 40px; 
+		  border-style: solid;
+		  border-color: #edc8c3;
+		}
+		
 		#content{ 
 	    display: grid;
 	    margin: 0 auto;
@@ -117,9 +123,8 @@
 	    "t3"
 	    "i4"
 	    "t4"
-	    "igfeed"
-	    "footer"
-	    ;
+      "igfeed"
+	    "footer";
 	  }
 		
 		.title{
@@ -136,9 +141,8 @@
 
 		.igfeed{
 		  grid-area: igfeed;
-		  width: 50%;
 		  display: inline-block;
-		  text-align: center;
+		  width: 100%;
 		}
 		
 		.i1{
@@ -398,14 +402,6 @@
     
     <div class="t4 center"><a href="https://www.google.com/?gws_rd=ssl">
       <img class="button" class="center" src="https://anthony6310.github.io/cardin/Website/Swing.jpg"/></div>
-    
-    <div class="igfeed">
-    
-      <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-        <iframe src="https://cdn.lightwidget.com/widgets/fd5f7d72ad4c53b385a56aebab7b905e.html" scrolling="no" 
-          allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-    
-    </div>
   
   <!-- Footer -->  
     
@@ -413,14 +409,28 @@
     
     <div id="footer">
     
-    <div>Icons made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from 
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
-        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from 
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
+          <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     
-    <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from 
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
-        <a href=   "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from 
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
+          <a href=   "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         
+    </div>
+    
+    <div class="igfeed center">
+      
+      <div><p class="igheading center">Instagram Feed</p></div>
+      
+      <div class="center">
+      
+        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+          <iframe src="https://cdn.lightwidget.com/widgets/fd5f7d72ad4c53b385a56aebab7b905e.html" scrolling="no" 
+            allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      
+      </div>
+      
     </div>
   
   </div>
