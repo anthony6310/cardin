@@ -35,6 +35,9 @@
 		  display: inline-block;
 		  width: 40%;
 		  border-radius: 50px;
+		  border: solid;
+		  border-color: #ca968f;
+		  border-width: thick;
 		}
 				
 		#ringbutton{
@@ -59,7 +62,6 @@
     }
     
     #footer{
-      background-color: #edc8c3;
       width: 100%;
     }
     
@@ -83,12 +85,12 @@
 		  font-family: cursive, "Times New Roman", Times, serif;
 		  font-size: 20px; 
 		  color: black;   
-		  padding: 14px 16px; 
+		  padding: 14px 2px; 
 		  text-decoration: none;
 		}
 		
 		.nav li a:hover{
-      background: #edc8c3;
+      background: #ca968f;
     } 
     
     .nav ul{
@@ -110,11 +112,18 @@
 		.igheading{
 		  font-family: cursive, "Times New Roman", Times, serif;
 		  font-size: 40px; 
-		  border-style: solid;
-		  border-color: #edc8c3;
+		  border-bottom: solid;
+		  border-color: #ca968f;
 		}
-		
-		#content{ 
+
+    .widget{
+      display: inline-block;
+      width: 65%;
+    }
+
+		#content{
+      background-color: transparent; 
+      background-image: linear-gradient(white, #edc8c3); 
 	    display: grid;
 	    margin: 0 auto;
 	    grid-gap: 10px;
@@ -136,6 +145,8 @@
 		
 		.navbar{
 		  grid-area: navbar;
+		  border-bottom: solid;
+		  border-color: #ca968f;
 		}
 		
 		.mobilenav{
@@ -378,6 +389,8 @@
     
     <div class="i1 center">
     
+    <br>
+    
       <a href="https://www.google.com/?gws_rd=ssl">
         <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/CrownMain.jpg"></a>
        
@@ -418,10 +431,8 @@
     
     <div class="i4 center">
     
-      <a href="https://www.google.com/?gws_rd=ssl">
-        <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/SwingMain.JPG"></a>
-      
-      <br>
+      <div><a href="https://www.google.com/?gws_rd=ssl">
+        <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/SwingMain.JPG"></a></div>
       
       <div class="center"><a class="imagebutton" href="https://www.google.com/?gws_rd=ssl"><p>Swings</p></a></div>
       
@@ -447,11 +458,11 @@
       
       <div><p class="igheading center">Instagram Feed</p></div>
       
-      <div class="center">
+      <div class="widget">
       
         <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-          <iframe src="https://cdn.lightwidget.com/widgets/fd5f7d72ad4c53b385a56aebab7b905e.html" scrolling="no" 
-            allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+          <iframe src="https://cdn.lightwidget.com/widgets/fd5f7d72ad4c53b385a56aebab7b905e.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" 
+            style="width:100%;border:0;overflow:hidden;"></iframe>
       
       </div>
       
