@@ -1,0 +1,265 @@
+
+    .button{
+		  display: inline-block;
+		  width: 8%;
+		}
+		
+		.center{ 
+		  display: inline-block;
+		  text-align: center;
+		}
+		
+		.centerimage{
+		  margin: 0;
+		  display: inline-block;
+		  width: 40%;
+		  border-radius: 50px;
+		  border: solid;
+		  border-color: #ca968f;
+		  border-width: thick;
+		}
+				
+		#ringbutton{
+		  display: inline-block;
+		  width: 12%;
+		}
+		
+		#collapse{
+      display: none;
+    }
+    
+    .float-center{
+      float: right;
+      position: relative;
+      left: -50%; 
+      text-align: left;
+    }
+    
+    .float-center > .child{
+      position: relative;
+      left: 50%;
+    }
+
+    .footer a{
+      color: black;
+      font-family: 'times new roman', times;
+      text-decoration: none;
+    }
+    
+    #logo{
+		  width: 35%;
+		  height: auto;
+		}
+		
+		.nav li{
+		  display: inline;
+		  padding: 5px;
+		}
+		
+		.nav li a{
+		  font-family: cursive, "Times New Roman", Times, serif;
+		  font-size: 20px; 
+		  color: black;   
+		  padding: 14px 2px; 
+		  text-decoration: none;
+		}
+		
+		.nav li a:hover{
+      background: #ca968f;
+    } 
+    
+    .nav ul{
+		  list-style-type: none; 
+      margin: 1; 
+      padding: 0;
+      overflow: hidden;
+      background-color: #fff; 
+      width: 100%; 
+		}
+		
+		.imagebutton{
+		  font-family: cursive, "Times New Roman", Times, serif;
+		  font-size: 30px; 
+		  color: black;
+		  text-decoration: none;
+		}
+		
+		.igheading{
+		  font-family: cursive, "Times New Roman", Times, serif;
+		  font-size: 40px; 
+		  border-bottom: solid;
+		  border-color: #ca968f;
+		}
+
+    .widget{
+      display: inline-block;
+      width: 40%;
+    }
+
+    #footercontent{
+      border-bottom: solid;
+		  border-color: #aa6961;
+    }
+    
+    #footercontent a{
+      padding-right: 15px;
+    }
+
+		#maincontent{
+      background-color: transparent; 
+      background-image: linear-gradient(white, #edc8c3); 
+	    display: grid;
+	    margin: 0 auto;
+	    grid-gap: 10px;
+	    grid-template-areas:
+	    "title"
+	    "navbar"
+	    "mobile"
+	    "crown"
+	    "ring"
+	    "pareo"
+	    "swing"
+	    "other"
+      "igfeed"
+	    "footer";
+	  }
+		
+		.title{
+		  grid-area: title;
+		}
+		
+		.navbar{
+		  grid-area: navbar;
+		  border-bottom: solid;
+		  border-color: #ca968f;
+		}
+		
+		.mobilenav{
+		  grid-area: mobile;
+		}
+
+		.igfeed{
+		  grid-area: igfeed;
+		  display: inline-block;
+		  width: 100%;
+		  padding-bottom: 50px;
+		}
+		
+		.crownmain{
+		  grid-area: crown;
+		}
+		
+		.ringmain{
+		  grid-area: ring;
+		}
+		
+		.pareomain{
+		  grid-area: pareo;
+		}
+
+		.swingmain{
+		  grid-area: swing;
+		}
+		
+		.othermain{
+		  grid-area: other;
+		}
+		
+		.footer{
+		  grid-area: footer;
+		  width: 100%;
+      background: #ca968f;
+		}
+		
+		@media only screen and (max-width: 764px){
+
+		  .nav{
+		    display: none;
+		  }
+		  
+		  .widget{
+        display: inline-block;
+        width: 90%;
+      }
+		
+		  #collapse{
+		    display: inline-block;
+		    width: 100%;
+		  }
+
+      .button{
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: block;
+		    width: 25%;
+		  }
+		  
+		  #ringbutton{
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: block;
+		    width: 33%;
+		  }
+		  
+		  #logo{
+		    width: 70%;
+		    height: auto;
+		  }
+		  
+		  .centerimage{
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: block;
+		    width: 90%;
+		    border-radius: 30px;
+		   }
+		    
+		  .menu-content{
+		    max-height: 0;
+		    overflow: hidden;
+		    padding: 0px 0px 0px 50px;
+		  }
+		  
+		  .collapsible-menu{
+		    background-color: #fff;
+		    padding: 0px 30px;
+		    border-bottom: 6px solid #ca968f;
+		    box-shadow: 1px 2px 3px #ca968f;
+		  }
+		  
+		  .collapsible-menu ul{
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .collapsible-menu a{
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        font-family: 'times new roman', times;
+      }
+      
+      .collapsible-menu label{
+        font-family: 'fantasy', cursive;
+        font-size: 40px;
+        display: block;
+        cursor: pointer;
+        background: url(https://anthony6310.github.io/cardin/Website/menu.png) no-repeat left center;
+        background-size: 40px;
+        padding: 10px 0 10px 50px;
+      }
+      
+      input#menu{
+        display: none;
+      }
+      
+      input:checked +label{
+        background-image: url(https://anthony6310.github.io/cardin/Website/close.png);
+      }
+      
+      input:checked ~ .menu-content{
+        max-height: 100%;
+      }
+		
+    }
