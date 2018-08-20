@@ -60,12 +60,8 @@
       position: relative;
       left: 50%;
     }
-    
-    #footer{
-      width: 100%;
-    }
-    
-    #footer a{
+
+    .footer a{
       color: black;
       font-family: 'times new roman', times;
       text-decoration: none;
@@ -118,10 +114,19 @@
 
     .widget{
       display: inline-block;
-      width: 65%;
+      width: 40%;
     }
 
-		#content{
+    #footercontent{
+      border-bottom: solid;
+		  border-color: #aa6961;
+    }
+    
+    #footercontent a{
+      padding-right: 15px;
+    }
+
+		#maincontent{
       background-color: transparent; 
       background-image: linear-gradient(white, #edc8c3); 
 	    display: grid;
@@ -131,10 +136,11 @@
 	    "title"
 	    "navbar"
 	    "mobile"
-	    "i1"
-	    "i2"
-	    "i3"
-	    "i4"
+	    "crown"
+	    "ring"
+	    "pareo"
+	    "swing"
+	    "other"
       "igfeed"
 	    "footer";
 	  }
@@ -157,42 +163,33 @@
 		  grid-area: igfeed;
 		  display: inline-block;
 		  width: 100%;
+		  padding-bottom: 50px;
 		}
 		
-		.i1{
-		  grid-area: i1;
+		.crownmain{
+		  grid-area: crown;
 		}
 		
-		.t1{
-		  grid-area: t1;
+		.ringmain{
+		  grid-area: ring;
 		}
 		
-		.i2{
-		  grid-area: i2;
+		.pareomain{
+		  grid-area: pareo;
+		}
+
+		.swingmain{
+		  grid-area: swing;
 		}
 		
-		.t2{
-		  grid-area: t2;
+		.othermain{
+		  grid-area: other;
 		}
 		
-		.i3{
-		  grid-area: i3;
-		}
-		
-		.t3{
-		  grid-area: t3;
-		}
-		
-		.i4{
-		  grid-area: i4;
-		}
-		
-		.t4{
-		  grid-area: t4;
-		}
-		
-		#footer{
+		.footer{
 		  grid-area: footer;
+		  width: 100%;
+      background: #ca968f;
 		}
 		
 		@media only screen and (max-width: 764px){
@@ -296,12 +293,18 @@
 
   <!-- Grid -->
   
-  <div id="content">
+  <div id="maincontent">
 
   <!-- Title -->
   
     <div class="title center">
-      <img id="logo" src="https://anthony6310.github.io/cardin/Website/Title.jpg"/>
+    
+    <a href="https://anthony6310.github.io/cardin/">
+    
+      <img id="logo" src="https://anthony6310.github.io/cardin/Website/Title.jpg">
+      
+    </a>
+      
     </div>
     
   <!-- Desktop Navbar -->
@@ -392,7 +395,7 @@
     
     <!-- Crown Link -->
     
-    <div class="i1 center">
+    <div class="crownmain center">
     
     <br>
     
@@ -407,7 +410,7 @@
     
     <!-- Ring Link -->
     
-    <div class="i2 center">
+    <div class="ringmain center">
     
       <a href="https://www.google.com/?gws_rd=ssl">
         <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/RingMain.jpg"></a>
@@ -420,7 +423,7 @@
     
     <!-- Pareo Link -->
     
-    <div class="i3 center">
+    <div class="pareomain center">
     
       <a href="https://www.google.com/?gws_rd=ssl">
         <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/PareoMain.jpg"></a>
@@ -434,7 +437,7 @@
     
     <!-- Swing Link -->
     
-    <div class="i4 center">
+    <div class="swingmain center">
     
       <div><a href="https://www.google.com/?gws_rd=ssl">
         <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/SwingMain.JPG"></a></div>
@@ -442,22 +445,19 @@
       <div class="center"><a class="imagebutton" href="https://www.google.com/?gws_rd=ssl"><p>Swings</p></a></div>
       
     </div>
-  
-  <!-- Footer -->  
     
-    <!-- Credits -->
+    <!-- Other Props Link -->
     
-    <div id="footer">
+    <div class="othermain center">
     
-      <div>Icons made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from 
-        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
-          <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    
-      <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from 
-        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
-          <a href=   "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-        
+      <div><a href="https://www.google.com/?gws_rd=ssl">
+        <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/OtherMain.jpg"></a></div>
+      
+      <div class="center"><a class="imagebutton" href="https://www.google.com/?gws_rd=ssl"><p>Other Props</p></a></div>
+      
     </div>
+    
+  <!-- Instagram Feed -->  
     
     <div class="igfeed center">
       
@@ -471,6 +471,42 @@
       
       </div>
       
+    </div>
+  
+  <!-- Footer -->  
+    
+    <div class="center footer">
+    
+      <div id="footercontent">
+      
+        <p>
+      
+          <a href="https://www.google.com/?gws_rd=ssl">Crowns</a>  
+        
+          <a href="https://www.google.com/?gws_rd=ssl">Boho Rings</a>
+        
+          <a href="https://www.google.com/?gws_rd=ssl">Pareos</a>
+        
+          <a href="https://www.google.com/?gws_rd=ssl">Swings</a>
+        
+          <a href="https://www.google.com/?gws_rd=ssl">Other Props</a>
+        
+        </p>
+        
+      </div>
+      
+      <br>
+      
+    <!-- Credits -->
+    
+      <div>Icons made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from 
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
+          <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    
+      <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from 
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by 
+          <a href=   "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        
     </div>
   
   </div>
