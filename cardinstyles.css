@@ -115,11 +115,11 @@
 	    "title"
 	    "navbar"
 	    "mobile"
-	    "crown"
-	    "ring"
-	    "pareo"
-	    "swing"
-	    "other"
+	    "slot1"
+	    "slot2"
+	    "slot3"
+	    "slot4"
+	    "slot5"
       "igfeed"
 	    "footer";
 	  }
@@ -145,24 +145,24 @@
 		  padding-bottom: 50px;
 		}
 		
-		.crownmain{
-		  grid-area: crown;
+		.slot1{
+		  grid-area: slot1;
 		}
 		
-		.ringmain{
-		  grid-area: ring;
+		.slot2{
+		  grid-area: slot2;
 		}
 		
-		.pareomain{
-		  grid-area: pareo;
+		.slot3{
+		  grid-area: slot3;
 		}
 
-		.swingmain{
-		  grid-area: swing;
+		.slot4{
+		  grid-area: slot4;
 		}
 		
-		.othermain{
-		  grid-area: other;
+		.slot5{
+		  grid-area: slot5;
 		}
 		
 		.footer{
