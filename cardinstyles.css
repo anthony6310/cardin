@@ -102,7 +102,7 @@
     }
     
     #footercontent a{
-      padding-right: 5px;
+      padding-right: 15px;
     }
 
 		#maincontent{
@@ -176,6 +176,10 @@
 		  .nav{
 		    display: none;
 		  }
+      
+      #footercontent a{
+        padding-right: 5px;
+      }
 		  
 		  .widget{
         display: inline-block;
