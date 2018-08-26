@@ -279,10 +279,6 @@
         width: 90%;
       }
       
-      .prev, .next {
-        padding: 8px;  
-      }
-      
       .prev, .next,.text {
         font-size: 11px
       }
