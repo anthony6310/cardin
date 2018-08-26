@@ -183,6 +183,13 @@
       margin: auto;
     }
 
+    .slideshow-container img{
+      border-radius: 35px;
+      border: solid;
+      border-width: thick;
+      border-color: #ca968f;
+    }
+
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
@@ -196,6 +203,8 @@
       font-size: 18px;
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
+      background-color: #ca968f;
+      opacity: 0.7;
     }
 
     /* Position the "next button" to the right */
@@ -206,7 +215,8 @@
 
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
+      background-color: #ca968f;
+      opacity: 1;
     }
 
     /* Caption text */
