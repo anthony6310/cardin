@@ -120,6 +120,11 @@
 	    "slot3"
 	    "slot4"
 	    "slot5"
+	    "slot6"
+	    "slot7"
+	    "slot8"
+	    "slot9"
+	    "slot10"
       "igfeed"
 	    "footer";
 	  }
@@ -163,6 +168,25 @@
 		
 		.slot5{
 		  grid-area: slot5;
+		}
+
+    .slot6{
+		  grid-area: slot6;
+		}
+    .slot7{
+		  grid-area: slot7;
+		}
+
+    .slot8{
+		  grid-area: slot8;
+		}
+
+    .slot9{
+		  grid-area: slot9;
+		}
+
+   .slot10{
+		  grid-area: slot10;
 		}
 		
 		.footer{
