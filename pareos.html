@@ -111,20 +111,212 @@
       
     </div>
     
-  <!-- Image Links -->
+<!-- SlideShow 1 -->  
 
-    <!-- Pareo Link -->
-    
-    <div class="slot1 center">
-    
-      <a href="https://anthony6310.github.io/cardin/pareos">
-        <img class="centerimage" src="https://anthony6310.github.io/cardin/Website/PareoMain.jpg"></a>
-       
-      <br>
-        
-      <div class="center"><a class="imagebutton" href="https://anthony6310.github.io/cardin/pareos"><p>Pareos</p></a></div>
-      
+<div class="slot1">
+
+  <div class="slideshow-container">
+
+      <div class="mySlides1 fade">
+
+        <div class="numbertext">1 / 3</div>
+
+          <img src="Website/OtherMain.jpg" style="width:100%">
+
+            <div class="text">Caption Text</div>
+
+      </div>
+
+      <div class="mySlides1 fade">
+
+        <div class="numbertext">2 / 3</div>
+
+          <img src="Website/SwingMain.JPG" style="width:100%">
+
+            <div class="text">Caption Two</div>
+
+      </div>
+
+      <div class="mySlides1 fade">
+
+        <div class="numbertext">3 / 3</div>
+
+          <img src="Website/PareoMain.jpg" style="width:100%">
+
+            <div class="text">Caption Three</div>
+
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
     </div>
+
+    <br>
+
+  </div>
+
+  <!-- First slideshow text -->
+
+  <div class="slot2 center">
+    <div class="centertext">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices vestibulum mauris ut pulvinar. Mauris in massa imperdiet, ultrices nunc aliquam, mollis augue. 
+        Donec vel tristique tortor, ut maximus nibh. Pellentesque id ipsum ligula. Integer ultrices in massa vel finibus. Sed porttitor dolor metus, ut tempor est scelerisque vitae. 
+        Ut dolor lorem, porta ut nibh at, porta porttitor erat. Ut fringilla ac erat ac rhoncus. Donec id posuere augue</p>
+    </div>
+  </div>
+    
+<!-- SlideShow 2 -->  
+
+<div class="slot3">
+
+  <div class="slideshow-container">
+
+      <div class="mySlides2 fade">
+
+        <div class="numbertext">1 / 3</div>
+
+          <img src="Website/OtherMain.jpg" style="width:100%">
+
+            <div class="text">Caption Text</div>
+
+      </div>
+
+      <div class="mySlides2 fade">
+
+        <div class="numbertext">2 / 3</div>
+
+          <img src="Website/SwingMain.JPG" style="width:100%">
+
+            <div class="text">Caption Two</div>
+
+      </div>
+
+      <div class="mySlides2 fade">
+
+        <div class="numbertext">3 / 3</div>
+
+          <img src="Website/PareoMain.jpg" style="width:100%">
+
+            <div class="text">Caption Three</div>
+
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+    </div>
+
+  <br>
+
+</div>
+
+  <!-- Second slideshow text -->
+
+  <div class="slot4 center">
+      <div class="centertext">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices vestibulum mauris ut pulvinar. Mauris in massa imperdiet, ultrices nunc aliquam, mollis augue. 
+          Donec vel tristique tortor, ut maximus nibh. Pellentesque id ipsum ligula. Integer ultrices in massa vel finibus. Sed porttitor dolor metus, ut tempor est scelerisque vitae. 
+          Ut dolor lorem, porta ut nibh at, porta porttitor erat. Ut fringilla ac erat ac rhoncus. Donec id posuere augue</p>
+      </div>
+    </div>
+
+  <!-- SlideShow 3 -->
+  
+  <div class="slot5">
+
+    <div class="slideshow-container">
+
+      <div class="mySlides3 fade">
+
+        <div class="numbertext">1 / 3</div>
+      
+          <img src="Website/OtherMain.jpg" style="width:100%">
+
+            <div class="text">Caption Text</div>
+
+      </div>
+
+      <div class="mySlides3 fade">
+
+        <div class="numbertext">2 / 3</div>
+
+          <img src="Website/RingMain.jpg" style="width:100%">
+      
+            <div class="text">Caption Two</div>
+
+      </div>
+
+      <div class="mySlides3 fade">
+
+        <div class="numbertext">3 / 3</div>
+
+          <img src="Website/PareoMain.jpg" style="width:100%">
+
+            <div class="text">Caption Three</div>
+
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+
+      <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+    </div>
+
+    <br>
+
+</div>
+
+  <!-- Third slideshow text -->
+
+  <div class="slot6 center">
+      <div class="centertext">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices vestibulum mauris ut pulvinar. Mauris in massa imperdiet, ultrices nunc aliquam, mollis augue. 
+          Donec vel tristique tortor, ut maximus nibh. Pellentesque id ipsum ligula. Integer ultrices in massa vel finibus. Sed porttitor dolor metus, ut tempor est scelerisque vitae. 
+          Ut dolor lorem, porta ut nibh at, porta porttitor erat. Ut fringilla ac erat ac rhoncus. Donec id posuere augue</p>
+      </div>
+    </div>
+
+  <!-- Slides Script -->
+
+<script>
+
+  var slideIndex = [1, 1, 1];                             //slideindex array
+  var slideId = ["mySlides1", "mySlides2", "mySlides3"];  //myslides array
+
+  showSlides(1, 0);
+  showSlides(1, 1);
+  showSlides(1, 2);
+
+  function plusSlides(n, m) {
+
+    showSlides(slideIndex[m] += n, m);
+  
+  }
+
+  function showSlides(n, m) {
+
+    var i;  //variable for loop
+
+    var slides = document.getElementsByClassName(slideId[m]);             //make array of slides per slide show
+
+    if (n > slides.length) {slideIndex[m] = 1}                                   //if n is over top bound then show first slide
+
+    if (n < 1) {slideIndex[m] = slides.length}                                   //if n is under bottom bound then show last slide
+
+    for (i = 0; i < slides.length; i++) {                                     //iterate through slides
+
+      slides[i].style.display = "none";
+
+    }
+
+      slides[slideIndex[m] - 1].style.display = "block";                           //gets provided slide index and displays it 
+
+  }
+
+</script>
     
   <!-- Instagram Feed -->  
     
