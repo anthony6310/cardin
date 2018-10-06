@@ -316,6 +316,10 @@
       .slideshow-container {
         width: 90%;
       }
+			
+			.centertext{
+				width: 90%;
+			}
       
       .prev, .next,.text {
         font-size: 11px
