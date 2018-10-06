@@ -216,7 +216,7 @@
 
     /* Slideshow container */
     .slideshow-container {
-      width: 40%;
+			width: 40%;
       position: relative;
       margin: auto;
     }
@@ -226,7 +226,6 @@
       border: solid;
       border-width: thick;
       border-color: #ca968f;
-			width: 40%;
     }
 
     /* Next & previous buttons */
