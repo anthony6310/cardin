@@ -156,6 +156,7 @@
 		}
 
 		.igfeed{
+		  margin-top: 0px;
 		  grid-area: igfeed;
 		  display: inline-block;
 		  width: 100%;
