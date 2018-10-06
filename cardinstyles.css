@@ -197,7 +197,9 @@
 
     * {box-sizing: border-box}
     body {font-family: Verdana, sans-serif; margin:0}
-    .mySlides {display: none}
+    .mySlides1 {display: none}
+		.mySlides2 {display: none}
+    .mySlides3 {display: none}
     img {vertical-align: middle;}
 
     /* Slideshow container */
