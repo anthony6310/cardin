@@ -17,6 +17,8 @@
 		  border: solid;
 		  border-color: #ca968f;
 		  border-width: thick;
+			background-color: #ca968f;
+			margin-bottom: 2px;
 		}
 		
 		.centerimage{
