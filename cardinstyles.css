@@ -8,6 +8,16 @@
 		  display: inline-block;
 		  text-align: center;
 		}
+
+		.centertext{
+			margin: 0;
+		  display: inline-block;
+		  width: 40%;
+		  border-radius: 50px;
+		  border: solid;
+		  border-color: #ca968f;
+		  border-width: thick;
+		}
 		
 		.centerimage{
 		  margin: 0;
