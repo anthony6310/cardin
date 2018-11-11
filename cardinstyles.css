@@ -85,8 +85,12 @@
       margin: 1; 
       padding: 0;
       overflow: hidden;
-      background-color: #fff; 
+      background-color: transparent; 
       width: 100%; 
+		}
+
+		.nav ul li{
+      background-color: transparent; 
 		}
 		
 		.imagebutton{
